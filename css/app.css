@@ -1907,8 +1907,7 @@ section.resume-section .resume-item .resume-date {
 #timeline .timeline-badge.timeline-future-movement p {
     color:#ff9999;
     position: absolute;
-    top: 37px;
-    left: 27px;
+
 }
 #timeline .timeline-badge.timeline-future-movement a span {
     color: darkturquoise;
