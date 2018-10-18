@@ -113,7 +113,7 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width: 768px) {
     section.resume-section {
-        min-height: 100vh;
+        min-height: 70vh;
     }
     section.resume-section .resume-item .resume-date {
         min-width: 15rem;
@@ -186,21 +186,21 @@ section.resume-section .resume-item .resume-date {
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 200%;
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
     overflow: hidden;
     font-size: 6rem;
-    /*transform: translateY(-50%);*/
+    transform: translateX(-45%);
 }
 
 /* Animation */
 .anim-typewriter{
-    animation: typewriter 2s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
+    animation: typewriter 3s steps(40) 500ms 1 normal both,
+    blinkTextCursor 2s steps(40) infinite normal;
 }
 @keyframes typewriter{
     from{width: 0;}
-    to{width: 4.9em;}
+    to{width: 5.1em;}
 }
 @keyframes blinkTextCursor{
     from{border-right-color: rgba(255,255,255,.75);}
@@ -2024,4 +2024,18 @@ section.resume-section .resume-item .resume-date {
     background-color: darkblue;
     color: white;
     font-weight: 600;
+}
+
+.quote{
+    font-family: Papyrus;
+    font-size: 1.7rem;
+    color: darkblue;
+    font-weight: 600;
+}
+
+.recom-text{
+    color: darkslategray;
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.4rem;
 }
