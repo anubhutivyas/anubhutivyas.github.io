@@ -14,7 +14,7 @@ body {
 #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 @media (min-width: 992px) {
@@ -83,7 +83,7 @@ h4,
 h5,
 h6 {
     font-family: 'Saira Extra Condensed', serif;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     color: darkblue;
 }
@@ -94,11 +94,11 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 section.resume-section {
@@ -135,7 +135,7 @@ section.resume-section .resume-item .resume-date {
 
 .subheading {
     font-weight: 500;
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     color: #ff9999;
 }
 
@@ -159,6 +159,14 @@ section.resume-section .resume-item .resume-date {
     color: #ff9999;
 }
 
+.project-tech{
+    color: darkturquoise;
+    font-size: 1.3rem;
+    text-transform: none;
+    font-family: 'Open Sans', serif;
+    font-weight: 400;
+}
+
 .desc{
     color: darkslategray;
     font-size: 1rem;
@@ -172,10 +180,9 @@ section.resume-section .resume-item .resume-date {
 }
 
 .date-range{
-    color: darkslategray;
     font-size: 1rem;
     margin-top: 0.4rem;
-    color: darkturquoise;
+    color: darkblue;
     font-weight: 600;
 }
 
@@ -1897,9 +1904,9 @@ section.resume-section .resume-item .resume-date {
 }
 #timeline .timeline-badge.timeline-future-movement {
     background-color: #ffffff;
-    height: 120px;
-    width: 120px;
-    font-size: 1.7em;
+    height: 105px;
+    width: 105px;
+    font-size: 1.4em;
     top: -16px;
     margin-left: -60px;
     border: 2px solid darkturquoise;
@@ -1918,7 +1925,7 @@ section.resume-section .resume-item .resume-date {
 #timeline .timeline-movement {
     /*   border-bottom: dashed 1px #4997cd; */
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 #timeline .timeline-movement.timeline-movement-top {
     height: 60px;
@@ -2013,6 +2020,7 @@ section.resume-section .resume-item .resume-date {
     width: 95% !important;
     text-align: justify;
     margin-top: 0.8rem;
+    font-size: 0.95rem;
 }
 
 /**************Who View Your Profile CSS End Here****************/
@@ -2021,7 +2029,7 @@ section.resume-section .resume-item .resume-date {
 /*Timeline css ends*/
 
 .btn{
-    background-color: darkblue;
+    background-color: darkturquoise;
     color: white;
     font-weight: 600;
 }
@@ -2038,4 +2046,211 @@ section.resume-section .resume-item .resume-date {
     text-align: justify;
     font-size: 0.95rem;
     line-height: 1.4rem;
+}
+
+
+/* Circle score auto fill starts*/
+
+.container {
+    margin: 0 auto;
+    width: auto;
+}
+
+.radial-progress {
+    float: left;
+    margin: 13px;
+    width: 105px;
+    height: 105px;
+    position: relative;
+    background-color: #d7d7d7;
+    border-radius: 50%;
+}
+@media (max-width: 480px) {
+    .radial-progress {
+        width: 85px;
+        height: 85px;
+    }
+}
+.radial-progress .circle .mask, .radial-progress .circle .fill, .radial-progress .circle .shadow {
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    border-radius: 50%;
+}
+@media (max-width: 480px) {
+    .radial-progress .circle .mask, .radial-progress .circle .fill, .radial-progress .circle .shadow {
+        width: 85px;
+        height: 85px;
+    }
+}
+.radial-progress .circle .mask, .radial-progress .circle .fill {
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform 1s;
+    transition: -ms-transform 1s;
+    transition: transform 1s;
+}
+.radial-progress .circle .mask.reanimate, .radial-progress .circle .fill.reanimate {
+    transition: -webkit-transform 0s;
+    transition: -ms-transform 0s;
+    transition: transform 0s;
+}
+.radial-progress .circle .mask.reset, .radial-progress .circle .fill.reset {
+    -webkit-transform: rotate(0deg) !important;
+    -ms-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+.radial-progress .circle .mask {
+    clip: rect(0px, 120px, 120px, 60px);
+}
+@media (max-width: 480px) {
+    .radial-progress .circle .mask {
+        clip: rect(0px, 85px, 85px, 42.5px);
+    }
+}
+.radial-progress .circle .mask .fill {
+    clip: rect(0px, 60px, 120px, 0px);
+    background-color: #EA463D;
+}
+@media (max-width: 480px) {
+    .radial-progress .circle .mask .fill {
+        clip: rect(0px, 42.5px, 85px, 0px);
+    }
+}
+.radial-progress .inset {
+    width: 100px !important;
+    height: 100px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px !important;
+    background-color: #fbfbfb;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+}
+@media (max-width: 480px) {
+    .radial-progress .inset {
+        width: 66px !important;
+        height: 66px !important;
+        margin: -33px 0 0 -33px !important;
+        line-height: 90px;
+    }
+}
+.radial-progress .little {
+    font-size: 22px;
+    color: #d7d7d7;
+}.graph-cont{
+     width: calc(100% - 40px);
+     width: 100%;
+     max-width: 800px;
+     margin: 0 auto;
+ }
+
+.bar{
+    height: 30px;
+    max-width: 800px;
+    margin: 0 auto 10px auto;
+    line-height: 30px;
+    font-size: 16px;
+    color: white;
+    padding: 0 0 0 10px;
+    position: relative;
+    width: 100%;
+    margin-left: 1rem;
+}
+.bar::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 30px;
+    top: 0;
+    z-index: -2;
+    background: #ecf0f1;
+
+}
+.bar::after{
+    content: '';
+    background: darkturquoise;
+    height: 30px;
+    transition: 0.7s;
+    display: block;
+    width: 100%;
+    -webkit-animation: bar-before 1 1.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bar1::after{
+    max-width: 85%;
+}
+.bar2::after{
+    max-width: 78%;
+}
+.bar3::after{
+    max-width: 85%;
+}
+.bar4::after{
+    max-width: 60%;
+}
+
+.bar5::after{
+    max-width: 82%;
+}
+.bar6::after{
+    max-width: 85%;
+}
+
+@-webkit-keyframes bar-before{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.plat-name{
+    color: #EA463D;
+    font-size: 1.1rem;
+    width: 12rem;
+    text-align: right;
+}
+
+.how-cont{
+    width: calc(100% - 40px);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+code {
+    padding: 5px;
+    background: #ecf0f1;
+    display: block;
+}
+pre{
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 480px) {
+    .radial-progress .little {
+        font-size: 12px;
+    }
+}
+.radial-progress .big {
+    font-size: 1.5rem;
+    color: darkturquoise;
+}
+@media (max-width: 480px) {
+    .radial-progress .big {
+        font-size: 27px;
+    }
+}
+
+.tech-name{
+    margin-top: 7rem;
+    text-align: center;
+    color: darkblue;
 }
