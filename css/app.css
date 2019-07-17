@@ -73,7 +73,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: darkgray;
+    color: darkblue;
 }
 
 h1,
@@ -1983,23 +1983,23 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bar1::after{
-    max-width: 85%;
+    max-width: 90%;
 }
 .bar2::after{
-    max-width: 78%;
+    max-width: 90%;
 }
 .bar3::after{
     max-width: 85%;
 }
 .bar4::after{
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .bar5::after{
-    max-width: 82%;
+    max-width: 85%;
 }
 .bar6::after{
-    max-width: 85%;
+    max-width: 87%;
 }
 
 @-webkit-keyframes bar-before{
